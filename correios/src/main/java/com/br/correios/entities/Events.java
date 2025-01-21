@@ -11,11 +11,7 @@ import java.util.Date;
 
 @Entity
 @Table(name = "tracking_events")
-@Getter
-@Setter
-@EqualsAndHashCode
-@AllArgsConstructor
-@NoArgsConstructor
+@Data
 public class Events {
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)

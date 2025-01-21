@@ -7,11 +7,7 @@ import lombok.*;
 
 @Entity
 @Table(name = "tracking_products")
-@Getter
-@Setter
-@EqualsAndHashCode
-@AllArgsConstructor
-@NoArgsConstructor
+@Data
 public class Products {
 
     @Id
