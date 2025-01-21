@@ -2,6 +2,7 @@ package com.br.correios.entities;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
 import lombok.*;
@@ -18,11 +19,11 @@ public class Events {
         @Column(name = "tracking_events_cd_id")
         private Integer id;
 
-        @NotBlank
+        @NotNull
         @Column(name = "tracking_events_dt_date")
         private Date date;
 
-        @NotBlank
+        @NotNull
         @Column(name = "tracking_events_hr_time")
         private LocalTime time;
 

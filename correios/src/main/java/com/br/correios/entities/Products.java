@@ -1,7 +1,9 @@
 package com.br.correios.entities;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.*;
 
@@ -25,7 +27,8 @@ public class Products {
     @Column(name = "tracking_products_tx_service")
     private String service;
 
-    @NotBlank
+    @NotNull
+    @Min(1)
     @Column(name = "tracking_products_nm_quantity")
     private Integer quantity;
 

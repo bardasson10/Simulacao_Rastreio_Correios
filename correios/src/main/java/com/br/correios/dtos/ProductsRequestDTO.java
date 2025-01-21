@@ -4,7 +4,6 @@ import lombok.Data;
 
 @Data
 public class ProductsRequestDTO {
-    private String category;
-    private String Service;
+    private String service;
     private Integer quantity;
 }
